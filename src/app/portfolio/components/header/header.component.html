@@ -1,0 +1,56 @@
+<header class="header" id="header">
+    <nav class="nav container">
+       
+        <a href="#" class="nav__logo">Bryan</a>
+
+        <div class="nav__menu" id="nav-menu" #navMenu>
+            <ul class="nav__list grid">
+                <li class="nav_item"
+                    *ngFor="let item of menu" >
+                    <a href="#home" class="nav__link" [routerLink]="[ item.route]">
+                        <i class="uil uil-home nav__icon"></i> Home
+                    </a>
+                </li>
+
+                <!-- <li class="nav_item">
+                    <a href="#about" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i> About
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil uil-file nav__icon"></i> Skills
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#services" class="nav__link">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="uil uil-scenery nav__icon"></i> Portfolio
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#contact" class="nav__link">
+                        <i class="uil uil-message nav__icon"></i> Contact Me
+                    </a>
+                </li> -->
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close" #navClose (click)="closeMenu()"></i>
+        </div>
+
+        <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle" #navToggle (click)="openMenu()">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+        
+
+    </nav>
+</header>
