@@ -9,7 +9,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component'; 
-
+import { MaterialModule } from "./../material/material/material.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     CommonModule,
-    PortfolioRoutingModule
+    PortfolioRoutingModule,
+    MaterialModule
   ]
 })
 export class PortfolioModule { }
