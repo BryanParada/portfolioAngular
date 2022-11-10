@@ -22,7 +22,8 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [ 
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -89,7 +90,8 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [  
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
